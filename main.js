@@ -38,6 +38,6 @@ function gotResult(error, results) {
     } else {
         console.log(results);
         document.getElementById("object_name").innerHTML = results[0].label;
-        document.getElementById("object_accuracy").innerHTML = results[0].confidence.toFixed(3);
+        document.getElementById("object_accuracy").innerHTML = results[0].confidence.toFixed(2);
     }
 }
